@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/../public/'));
 
 // set your first route
 app.get('/', (req, res) => {
-   res.sendFile(path.join(__dirname, '/../public/index.html'));
+   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 app.listen(port, () => {
    console.info("Node server up on port ", port);
