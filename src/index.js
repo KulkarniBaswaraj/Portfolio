@@ -20,7 +20,7 @@ app.use(cors());
 
 // set public resources folder
 // app.use(express.static(__dirname + '../public'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 console.log("test..");
 console.log(__dirname + 'public' );
 
