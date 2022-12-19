@@ -19,8 +19,11 @@ app.use(cors());
 // app.use(postRouter);
 
 // set public resources folder
-app.use(express.static(__dirname + '../public/'));
-console.log(__dirname + '/public' );
+// app.use(express.static(__dirname + '../public'));
+app.use(express.static(path.join(__dirname, 'public')));
+console.log("test..");
+console.log(__dirname + 'public' );
+
 
 // set your first route
 app.get('/', (req, res) => {
